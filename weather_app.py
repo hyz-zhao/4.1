@@ -96,7 +96,7 @@ class WeatherAPI:
             return None, f"未知错误：{str(e)}"
     
     def parse_response(self, resp):
-        """解析 API 返回数据"""
+        """解析  API  返回数据"""
         try:
             if resp.get("status") != "1":
                 info = resp.get("info", "未知错误")
