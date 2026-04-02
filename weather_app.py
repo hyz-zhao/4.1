@@ -94,7 +94,7 @@ class WeatherAPI:
     
     def _get_city_code(self, city_name: str) -> Optional[str]:
         """获取城市编码（高德地图需要城市adcode）"""
-        # 常用城市编码映射表（可扩展）
+        # 常用城市编码映射表
         city_code_map = {
             # 直辖市
             "北京": "110000", "北京市": "110000",
