@@ -54,7 +54,7 @@ class WeatherAPI:
     def __init__(self, api_key: str = ""):
         self.api_key: str = api_key
         self.api_url: str = "https://restapi.amap.com/v3/weather/weatherInfo"
-        self.timeout: int = 10  # 请求超时时间（秒）
+        self.timeout: int = 10  # 请求超时时间
     
     def get_weather(self, city_name: str) -> Optional[WeatherData]:
         """请求天气数据"""
